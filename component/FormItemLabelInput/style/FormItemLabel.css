@@ -1,0 +1,8 @@
+.label-select .ant-select-selection--multiple > ul > li,
+.label-select .ant-select-selection__rendered > ul > li{
+  height: auto;
+}
+
+.label-select .ant-select-selection__choice__content.ant-select-selection__choice__content{
+  white-space: normal;
+}

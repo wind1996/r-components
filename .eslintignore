@@ -1,0 +1,5 @@
+node_modules
+dist
+client/common/core/*
+gulp/*
+*.pug

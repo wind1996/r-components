@@ -1,0 +1,17 @@
+.inlineFormItem {
+  > div {
+    display: inline-block;
+
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.inline {
+  > div:last-child {
+    display: inline-block;
+    vertical-align: top;
+  }
+  margin-bottom: 8px;
+}

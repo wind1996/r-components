@@ -1,0 +1,43 @@
+.container {
+  position: relative;
+  overflow: hidden;
+
+  .textIndex {
+    position: absolute;
+    top: -0.06em;
+    bottom: 0.06em;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+
+    .title, .index {
+      display: inline-block;
+      white-space: nowrap;
+      vertical-align: bottom;
+
+    }
+
+    .title {
+      width: auto;
+      margin: 0 8px;
+      font-size: 16px;
+    }
+
+    .index {
+      width: 32px;
+      height: 32px;
+      color: #FFFFFF;
+      font-weight: 500;
+      line-height: 32px;
+      text-align: center;
+      background: #1890FF;
+      border: 1px solid rgba(0, 0, 0, 0.25);
+      border-radius: 32px;
+    }
+  }
+
+  > div:last-child {
+    transform: translateY(0.06em);
+  }
+}
