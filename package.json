@@ -5,13 +5,15 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack/webpack.config.prod.js",
     "start": "webpack-dev-server --progress --config webpack/webpack.config.dev.js",
     "lint": "eslint --ext .js src component",
     "lint:fix": "eslint --fix --ext .js src component",
     "lint-style": "stylelint './src/**/*.less ./component/**/*.less' --fix",
     "lint-style-win": "stylelint ./src/**/*.less ./component/**/*.less  --fix",
-    "doc": "npm run build && http-server ./dist/ -p 8888 -o"
+    "doc": "npm run build && http-server ./dist/ -p 8888 -o",
+    "doc-build": "webpack --config webpack/webpack.config.prod.js",
+    "doc-publish": "cd scripts && publish-doc.cmd",
+    "doc-deploy": "npm run doc-build && npm run doc-publish"
   },
   "repository": {
     "type": "git",
@@ -59,6 +61,7 @@
     "prop-types": "^15.7.2",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
+    "shelljs": "^0.8.4",
     "style-loader": "^1.2.1",
     "stylelint": "^13.6.1",
     "stylelint-order": "^4.1.0",

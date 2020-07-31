@@ -10,7 +10,7 @@ const { name } = require('../package.json');
 module.exports = {
   entry: path.resolve(__dirname, '../src/index.js'),
   output: {
-    path: path.resolve(__dirname, '../dist'),
+    path: path.resolve(__dirname, '../docs'),
     filename: 'js/bundle.[hash:8].js',
   },
   mode: 'production',
